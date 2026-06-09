@@ -65,12 +65,12 @@ button { font: inherit; }
 
 .concept {
   max-width: 1200px; margin: auto; padding: 105px 35px;
-  display: grid; grid-template-columns: 120px 1.05fr 1fr; gap: 50px; align-items: center;
+  display: grid; grid-template-columns: 120px 1fr; gap: 16px 50px; align-items: center;
 }
 .concept-label { display: grid; place-items: center; width: 104px; height: 104px; border-radius: 50%; background: var(--paper-deep); font: 600 16px var(--serif); }
-.concept-copy h2 { margin: 16px 0 20px; color: var(--wine); font: 700 clamp(25px, 3vw, 40px)/1.65 var(--serif); letter-spacing: .06em; }
+.concept-copy h2 { margin: 16px 0 20px; color: var(--wine); font: 700 clamp(23px, 2.4vw, 34px)/1.65 var(--serif); letter-spacing: .06em; }
 .concept-copy > p:last-child { margin: 0; color: var(--muted); font-size: 14px; line-height: 2; }
-.concept-points { margin: 0; padding: 25px 0; list-style: none; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.concept-points { grid-column: 2; margin: 0; padding: 18px 0; list-style: none; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .concept-points li { position: relative; padding: 9px 0 9px 24px; font: 600 15px/1.8 var(--serif); }
 .concept-points li::before { content: "■"; position: absolute; left: 0; top: 10px; color: var(--navy); font-size: 10px; }
 
@@ -168,7 +168,7 @@ dialog p { font-size: 13px; line-height: 2; }
   .concept { padding: 75px 24px; display: block; }
   .concept-label { width: 78px; height: 78px; margin-bottom: 28px; font-size: 12px; }
   .concept-copy h2 { font-size: 25px; }
-  .concept-points { margin-top: 35px; }
+  .concept-points { grid-column: auto; margin-top: 35px; }
   .section-heading { display: block; }
   .section-heading > p { margin-top: 20px; }
   .projects { padding: 75px 16px 85px; }
